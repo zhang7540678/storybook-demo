@@ -13,7 +13,7 @@ export default {
   },
   setup(props, context) {
     const changeTitle = () => {
-      emit('click')
+      context.emit('click')
     }
     return {
       changeTitle,

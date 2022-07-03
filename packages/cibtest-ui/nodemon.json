@@ -1,0 +1,16 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    "__tests__/**",
+    "node_modules/**"
+  ],
+  "verbose": true,
+  "exec": "yalc push",
+  "events": {
+    "restart": "yalc push"
+  },
+  "watch": [
+    "lib/"
+  ],
+  "ext": "js,json,vue,ts,tsx,scss,less"
+}

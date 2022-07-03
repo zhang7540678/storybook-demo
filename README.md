@@ -30,3 +30,10 @@
     注：对于 npm link 方式，由于主项目和test-module项目属于不同的项目，都有自己各自的 node_modules,如果两个项目都使用了同一个依赖，它们会在各自的 node_modules去查找，如果这个依赖不支持多例，应用就会异常。如果两个项目的编译规则不匹配，也同样会出问题。而且webpack不会对test-module项目做预编译，可能会导致实际构建或者运行时会报错等
 
 ### 调试方式二：yalc
+    1、发布调试包到到本地仓库： yalc push  （在包所在目录执行，yalc dir查询本地仓库目录）
+    （1）使用nodemon管理文件更新的动态发布
+    2、在项目中添加依赖：yalc add [包名]（推荐使用yalc link，这种方式不会修改项目中的package.json文件）
+    3、yalc update [包名] 更新依赖 （使用yalc push 可以跳过这层）
+    4、删除依赖：yalc remove [my-package] 或者 yalc remove --all
+
+    注：以上的调试方式结束都要记得删除依赖
