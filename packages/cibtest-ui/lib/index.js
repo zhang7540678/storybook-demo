@@ -1,5 +1,5 @@
-import 'element-plus/dist/index.css'
 import Button from './Button/index.vue'
+import ElementPlus from "element-plus"
 const components = [Button];
 
 const install = (app) => {

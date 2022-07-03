@@ -1,5 +1,5 @@
-//import { Button } from "../../../packages/cibtest-ui/lib";
-import { Button } from "cibtest-ui";
+import { Button } from "../../../packages/cibtest-ui/lib";
+//import { Button } from "cibtest-ui";
 
 export default {
   title: 'CibtestUi/Button',
@@ -8,7 +8,7 @@ export default {
   argTypes: {
     size: {
       control: { type: 'select' },
-      options: ['mini', 'small', 'medium', 'large'],
+      options: ['small', 'medium', 'large'],
     },
     type: {
       control: { type: 'select' },
