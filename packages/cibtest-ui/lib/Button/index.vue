@@ -14,6 +14,7 @@ export default {
   setup(props, context) {
     const changeTitle = () => {
       context.emit('click')
+      console.log(1)
     }
     return {
       changeTitle,
