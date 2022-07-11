@@ -1,6 +1,9 @@
 # stroybook初始化流程
     1、使用vue创建工程，目前vite工程会出现异常报错
     2、npx sb init
+### vite创建storybook工程
+    1、npm init vite
+    2、npx sb init --builder @storybook/builder-vite
 
 # lerna 使用
     1、lerna 工程初始化
